@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mindofmachines.vegme"
+    namespace = "com.mindofmachines.myapplication"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.mindofmachines.vegme"
+        applicationId = "com.mindofmachines.myapplication"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

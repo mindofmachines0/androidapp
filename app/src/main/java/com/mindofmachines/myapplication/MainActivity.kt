@@ -1,4 +1,4 @@
-package com.mindofmachines.vegme
+package com.mindofmachines.myapplication
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

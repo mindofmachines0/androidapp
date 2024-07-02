@@ -1,4 +1,4 @@
-package com.mindofmachines.vegme
+package com.mindofmachines.myapplication
 
 import org.junit.Test
 
