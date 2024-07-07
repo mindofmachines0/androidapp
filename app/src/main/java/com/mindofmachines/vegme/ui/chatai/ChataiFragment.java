@@ -1,4 +1,4 @@
-package com.mindofmachines.vegme.ui.dashboard;
+package com.mindofmachines.vegme.ui.chatai;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.mindofmachines.vegme.databinding.FragmentDashboardBinding;
+import com.mindofmachines.vegme.databinding.FragmentChataiBinding;
 
-public class DashboardFragment extends Fragment {
+public class ChataiFragment extends Fragment {
 
-    private FragmentDashboardBinding binding;
+    private FragmentChataiBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DashboardViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        ChataiViewModel chataiViewModel =
+                new ViewModelProvider(this).get(ChataiViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentChataiBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textChatai;
+        chataiViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
@@ -34,4 +34,5 @@ public class DashboardFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 }
